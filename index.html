@@ -8,8 +8,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-    <script src="main.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <script src="javascript/main.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>my profile</title>
@@ -17,180 +17,188 @@
     <body>
         <div class="wrapper">
             <div class="landing-page">
-                <nav class="navbar navbar-inverse navbar-fixed-top navbar-dark">
-                    <div class="container">
-                      <div class="navbar-header">
+                <nav class="navbar navbar-inverse navbar-fixed-top navbar-dark bg-white">
+                <div class="container">
+                    <div class="navbar-header">
                         <a class="navbar-brand" href=""><b>Jackie N Dube</b> <br>
-                       <span>Web Developer</span></a>
-                      </div>
-                
-                      <ul class="nav navbar-nav navbar-right">
-                        <li class="large-nav"><a href="#about-me">About</a></li>
-                        <li class="large-nav"><a href="#skills">Skills</a></li>
+                        <span>Web Developer</span></a>
+                    </div>
+                    
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="large-nav"><a href="#about">About</a></li>
                         <li class="large-nav"><a href="#portfolio">Portfolio</a></li>
-                        <li class="large-nav"><a href="#mail-me">Contact</a></li>
+                        <li class="large-nav"><a href="#contact">Contact</a></li>
+                        
+                    </ul>
+                    <li  class="small-nav"><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i></a>
+                    </li>
 
-                        <li  class="small-nav"><a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="fa fa-bars"></i></a>
-                        </li>
-
-                        <div id="myLinks">
-                            <a href="#about-me" >About</a>
-                            <a href="#skills" >Skills</a>
-                            <a href="#portfolio" >Portfolio</a>
-                            <a href="#mail-me" >Contact</a>
-                        </div>
-                      </ul>
+                    <div id="myLinks" style="display: none;">
+                        <a href="#about" >About</a>
+                        <a href="#portfolio" >Portfolio</a>
+                        <a href="#contact" >Contact</a>
                     </div>
-                  </nav>
-                
-                <div class="langing-page">
+                       
+                </nav>
+                    
+
+
+
+
+                <div class="">
                     <div class="jackie">
-                        <img src="jackie.JPG" alt="jackie" width="170px">
+                        <img src="images/jackie.JPG" alt="jackie" width="170px">
                     </div>
-                    <div class="about" >
-                        <a href="cv.pdf" class="btn btn1" target="_blank">View my CV</a>
+                    <div class="my-cv-port" >
+                        <a href="docs/Jackie-N-Dube.pdf" class="btn btn1" target="_blank">View my CV</a>
                         <a href="#portfolio" class="btn two btn1">View Projects</a>
                     </div>
                 </div>
+                    
+            </div>
+
+            <div class="about-me">
+                <div id="about" class="links"></div>
+                <h2>ABOUT</h2>
+                <hr>
+                <div class="top-container"> 
+                    <div class="box-1">
+                        <h3>BRIEF DESCRIPTION</h3>
+                        <p>Hi there! I am Jackie Nomsa Dube, a self taught Web Developer.
+                            Through practice and experience, i have managed to acquire skills
+                            from knowing absolutely nothing to where i am today.<br><br> As fun as
+                            my journey has been it has also been challenging, but that has not
+                            stopped or deferred me because i am genuinely interested in computer
+                            programming. <br><br>
+                            I would like to work in a stable and proffessional
+                            environment as this will
+                            allow me to utilize my skills and hopefully improve them significantly.
+                        </p>
+                    </div>
+                    <div class="box-2">
+                        <table>
+                            <thead><h3>PERSONAL INFORMATION</h3></thead>
+                            <tr>
+                                <td>Age:</td>
+                                <td>26</td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td>jackienomsa3@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>Phone</td>
+                                <td>067 076 9436</td>
+                            </tr>
+                            <tr>
+                                <td>Address</td>
+                                <td>23 Grens Road, Kempton Park West 1619</td>
+                            </tr>
+                            <tr>
+                                <td>Languages</td>
+                                <td>English, IsiZulu</td>
+                            </tr>
                 
-            </div>
-           <h2 style="text-align: center;" id="about-me">ABOUT</h2>
-            <hr style="width: 50%;">
-            <div class="top-container"> 
-                <div class="box-1">
-                    <h2>BRIEF DESCRIPTION</h2>
-                    <p>Hi there! I am Jackie Nomsa Dube, a self taught Web Developer.
-                    Through practice and experience, i have managed to acquire skills
-                    from knowing absolutely nothing to where i am today.<br><br> As fun as
-                    my journey has been it has also been challenging, but that has not
-                    stopped or deferred me because i am genuinely interested in computer
-                    programming. <br><br>
-                    I would like to work in a stable and proffessional
-                    environment as this will
-                    allow me to utilize my skills and hopefully improve them significantly.</p>
-                </div>
-                <div class="box-2">
-                    <table>
-                        <thead><h2>PERSONAL INFORMATION</h2></thead>
-                        <tr>
-                            <td>Age:</td>
-                            <td>25</td>
-                        </tr>
-                        <tr>
-                            <td>Email</td>
-                            <td>jackienomsa3@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td>Phone</td>
-                            <td>067 076 9436</td>
-                        </tr>
-                        <tr>
-                            <td>Address</td>
-                            <td>23 North Rand Road, Kempton Park 1619</td>
-                        </tr>
-                        <tr>
-                            <td>Languages</td>
-                            <td>English, IsiZulu</td>
-                        </tr>
-        
-                    </table>
-                </div>
-                <div class="box-3">
-                    <h2>PROFILE ON LINKEDIN</h2>
-                    <a href="https://za.linkedin.com/in/jackie-nomsa-dube-390b66131">
-                        <img src="web dev.PNG" alt="" class="link-1">
-                    </a>
+                        </table>
+                    </div>
+                    <div class="box-3">
+                        <h3>PROFILE ON LINKEDIN</h3>
+                        <a href="https://za.linkedin.com/in/jackie-nomsa-dube-390b66131">
+                            <img src="images/web dev.PNG" alt="" class="link-1">
+                        </a>
+                    </div>
                 </div>
             </div>
-                    <h2 style="text-align: center;" id="skills">SKILLS</h2>
-                    <hr style="width: 50%; margin-bottom: 20px;">
-                    <div class="skills" id="work">
-    
-                    <ul>
-                        <li>PYTHON<h2></h2><span class="bar"><span class="python"></span></span></li>
-                        <li>SQL<h2></h2><span class="bar"><span class="sql"></span></span></li>
-                        <li>HTML<h2></h2><span class="bar"><span class="html"></span></span></li>
-                        <li>CSS<h2></h2><span class="bar"><span class="css"></span></span></li>
-                        <li>JQUERY<h2></h2><span class="bar"><span class="jquery"></span></span></li>
-                        <li>JAVASCRIPT<h2></h2><span class="bar"><span class="javascript"></span></span></li>
-                    </ul>
-                 </div>
-    
-           
-            
-             <h2 style="text-align: center;" id="portfolio">PORTFOLIO</h2>
-            <hr style="width: 50%; margin-bottom: 20px;">
-            <div class="my-work">
-
-                <div class=" project project-1">
-                    <img src="public.png" alt="women" height="150">
-                    <p>women inpublic sector s a trainnig conferencing and training company tha focuses on omen empoerment </p>
-                    <h3>skills</h3>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Jquery</li>
-                        
-                    </ul>
-                    <a href="public/women.html">read more</a>
+                
+            <div class="my-port">
+                <div id="portfolio" class="links"></div>
+                <h2 class="portfolio-head">Portfolio</h2>
+                <hr>
+                <div class="projects">
+                    <div class="project">
+                        <div class="full-info">
+                            <a href="#" class="image"><img src="images/proj-1.PNG" alt=""></a>
+                            <div class="image-overlay img-blur">
+                                <div class="image-title">Flask Portfolio</div>
+                                <p class="image-desc">This is a python/flask, html and css portfolio website</p>
+                                <a href="https://github.com/JackieNomsa/jnd-portfolio" class="code" target="_blank">view-code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="full-info">
+                            <a href="#" class="image"><img src="images/proj-2.PNG" alt=""></a>
+                            <div class="image-overlay img-blur">
+                                <div class="image-title">Flask web app</div>
+                                <p class="image-desc">This is a python/flask web app of a travel and tour company with data from a MySQL database</p>
+                                <a href="https://github.com/JackieNomsa/travel_" class="code" target="_blank">view-code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="full-info">
+                            <a href="#" class="image"><img src="images/proj-3.PNG" alt=""></a>
+                            <div class="image-overlay img-blur">
+                                <div class="image-title">Movie web scrapper</div>
+                                <p class="image-desc">This is a python and BeautifulSoup4 web scrapper, searches data from the IMdb website, and renders to a template using flask.</p>
+                                <a href="https://github.com/JackieNomsa/python-web-scrapper" class="code" target="_blank">view-code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="full-info">
+                            <a href="#" class="image"><img src="images/blank.jpg" alt=""></a>
+                            <div class="image-overlay img-blur">
+                                <div class="image-title">Coming Soon...</div>
+                                <p class="image-desc">Lorem ipsum dolor sit amet.</p>
+                                <a href="#" class="code" target="_blank">view-code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="full-info">
+                            <a href="#" class="image"><img src="images/blank.jpg" alt=""></a>
+                            <div class="image-overlay img-blur">
+                                <div class="image-title">Coming Soon...</div>
+                                <p class="image-desc">Lorem ipsum dolor sit amet.</p>
+                                <a href="#" class="code"target="_blank">view-code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="full-info">
+                            <a href="#" class="image"><img src="images/blank.jpg" alt=""></a>
+                            <div class="image-overlay img-blur">
+                                <div class="image-title">Coming Soon...</div>
+                                <p class="image-desc">Lorem ipsum dolor sit amet.</p>
+                                <a href="#" class="code" target="_blank">view-code</a>
+                            </div>
+                        </div>
+                    </div>      
                 </div>
-                <div class=" project project-2">
-                    <img src="calculator.png" alt="calculator" height="150" >
-                    <p>assumenda repellat sint tenetur non id tempore!---coming soon </p>
-                    <h3>skills</h3>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Bootstrap</li>
-                        <li>Javascript</li>
-                    </ul>
-                    <a href="#">read more</a>
-                </div>
-
-                <div class=" project project-3">
-                    <img src="drum.png" alt="drum" height="150" >
-                    <p>assumenda repellat sint tenetur non id tempore! --coming soon </p>
-                    <h3>skills</h3>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Bootstrap</li>
-                        
-                    </ul>
-                    <a href="#">read more</a>
-                </div>
-
-                <div class=" project project-4">
-                    <img src="travel.png" alt="" height="150">
-                    <p>JnJ's travel and tours: is a tourism company located in the gauteng province in South Africa</p>
-                    <h3>skills</h3>
-                    <ul>
-                        <li>HTML & CSS</li>
-                        <li>Javascript & Jquery</li>
-                        <li>Bootstrap</li>
-                    </ul>
-                    <a href="jnj/travel.html">read more</a>
-                </div>
-
             </div>
 
-            <h2 style="text-align: center;"  id="mail-me">CONTACT ME</h2>
-            <div class="contact">
-              
-                 <form action="https://formspree.io/jackienomsa3@gmail.com" method="POST">
-                    <input type="text" placeholder="email" name="email" class="email" required>
-                    <input type="text" placeholder="subject" name="subject" class="subject" required>
-                    <textarea name="message"class='message' placeholder="message" id="" cols="25" rows="10" required></textarea>
-                    <div class="valid" style="color: red; font-style: italic;"></div>
-                    <button type="submit" class="btn btn-primary submit">SEND MESSAGE</button>
-                </form>
-            </div>
-            <footer>
-                <p><a href="">GitHub</a></p>
-                All Rights Reserved &copy; jackie 2020
-            </footer>
+                <div class="contact-me">
+                    <div id="contact" class="links"></div>
+                    <h2>CONTACT ME</h2>
+                    <hr>
+                    <div class="contact">
+                        <form action="https://formspree.io/jackienomsa3@gmail.com" method="POST">
+                            <input type="text" placeholder="email" name="email" class="email" required>
+                            <input type="text" placeholder="subject" name="subject" class="subject" required>
+                            <textarea name="message"class='message' placeholder="message" id="" cols="25" rows="10" required></textarea>
+                            <div class="valid" style="color: red; font-style: italic;"></div>
+                            <button type="submit" class="btn btn-primary submit">SEND MESSAGE</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <footer>
+                    <p><a href="">GitHub</a></p>
+                    All Rights Reserved &copy; jackie 2020
+                </footer>   
         </div>
-
+    
     </body>
 </html>
