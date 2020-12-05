@@ -139,11 +139,10 @@ li.small-nav {
 
 /* home page */
 .landing-page{
-    margin: 0;
-    padding: 0;
+    
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
-    background-image: url(/jackienomsa.github.io/images/666.jpg);
+    background-image: url("../images/666.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -175,6 +174,7 @@ hr{
 }
 
  .jackie, .my-cv-port{
+     position: relative;
     padding: 30px;
     max-width: 50%;
     margin: auto;
@@ -183,18 +183,20 @@ hr{
 }
 
 .jackie img{
+    position: relative;
     border-radius: 50%;
-    box-shadow: 0 0 10px #25AFF7;
+    box-shadow: 0 0 20px #25AFF7;
     
 }
 
 .jackie{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     max-width:100%;
     animation: drop 3s linear 2s forwards;
-    top: -200%;
+    top: -100%;
 }
 
 @keyframes drop{
@@ -359,13 +361,13 @@ tr, td{
 
 /* projects */
 .my-port{
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 .projects{
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 20px;
+    grid-gap: 40px;
     
 }
 
@@ -383,7 +385,7 @@ tr, td{
 
 
 .project:hover{
-    box-shadow: 0 0 6px #25AFF7;
+    box-shadow: 0 0 10px #25AFF7;
    
 }
 
